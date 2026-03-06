@@ -400,24 +400,27 @@ section {
   overflow: hidden;
   position: relative;
 }
+
 .marquee-box {
   display: flex;
   align-items: center;
-  width: 200%;
+  width: max-content; /*  200% → max-content */
   height: 100%;
-  position: absolute;
-  overflow: hidden;
-  animation: marquee 60s linear infinite;
+  /*  position: absolute সরানো */
+  /*  overflow: hidden সরানো */
+  animation: marquee 10s linear infinite; /*  5s → 30s ধীরে */
 }
+
 .marquee-item {
-  float: left;
+  flex-shrink: 0; /*  float: left → flex-shrink: 0 */
 }
+
 @keyframes marquee {
   0% {
-    left: 0;
+    transform: translateX(0); /*  left → transform */
   }
   100% {
-    left: -100%;
+    transform: translateX(-30%); /* -50% = প্রথম সেট শেষ হলে seamless restart */
   }
 }
 /* marquee end */

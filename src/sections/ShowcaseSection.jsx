@@ -12,14 +12,12 @@ const AppShowcase = () => {
   const ycDirectoryRef = useRef(null);
 
   useGSAP(() => {
-    // Animation for the main section
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
       { opacity: 1, duration: 1.5 },
     );
 
-    // Animations for each app showcase
     const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
 
     cards.forEach((card, index) => {
@@ -49,29 +47,24 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img src="/images/project7.png" alt="Avi AI Assistante" />
             </div>
             <div className="text-content">
-              <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
-              </h2>
+              <h2>Experience Next-Gen Interaction with Avi AI Assistant</h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                A smart, conversational AI built with a modern tech stack to
+                provide seamless, real-time assistance through a dark-themed,
+                intuitive chat interface.
               </p>
             </div>
           </div>
 
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
-                <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
-                />
+              <div className="image-wrapper bg-[#FFEFDB] rounded-xl overflow-hidden">
+                <img src="/images/project12.png" alt="Avi Bar Shop" />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>The Bar Shop Webpage</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>

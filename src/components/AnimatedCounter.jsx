@@ -24,7 +24,7 @@ const AnimatedCounter = () => {
         innerText: item.value,
         duration: 2.5,
         ease: "power2.out",
-        snap: { innerText: 1 }, // Ensures whole numbers
+        snap: { innerText: 1 },
         scrollTrigger: {
           trigger: "#counter",
           start: "top 90%",
