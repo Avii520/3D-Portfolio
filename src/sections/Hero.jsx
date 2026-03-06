@@ -1,7 +1,7 @@
 import React from "react";
 import { words } from "../constants";
 import Button from "../components/Button";
-import HeroExperience from "../components/hero_models/HeroExperience";
+import HeroExperience from "../components/Models/hero_models/HeroExperience";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import AnimatedCounter from "../components/AnimatedCounter";

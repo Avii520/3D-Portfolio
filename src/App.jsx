@@ -7,6 +7,9 @@ import LogoShowcase from "./sections/LogoShowcase";
 import FeatureCards from "./sections/FeatureCards";
 import ExperienceSection from "./sections/ExperienceSection";
 import TechStack from "./sections/TechStack";
+import Testimonial from "./sections/Testimonial";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
@@ -18,6 +21,9 @@ const App = () => {
       <FeatureCards />
       <ExperienceSection />
       <TechStack />
+      <Testimonial />
+      <Contact />
+      <Footer />
     </>
   );
 };
